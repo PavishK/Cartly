@@ -1,31 +1,20 @@
-# Native folders (ignore if managed workflow, safe to delete too)
-android/
-ios/
-
-# Example or test apps
+# Example/demo folders
 app-example/
 example/
 tests/
-__tests__/
-coverage/
 docs/
 
-# Node and build cache
+# Editor & OS files
+.vscode/
+.cursor/
+.DS_Store
+.idea/
+
+# Node caches
 node_modules/.cache/
 npm-debug.log
 yarn-error.log
-dist/
-build/
+
+# Expo caches
 .expo/
 .expo-shared/
-
-# Logs
-*.log
-*.tmp
-
-# Git / editor files
-.git/
-.gitignore
-.vscode/
-.idea/
-.DS_Store
