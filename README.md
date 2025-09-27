@@ -42,7 +42,7 @@ Cartly is a mobile application that lets users manage a to-do list of products, 
 
 1. Clone the repository:  
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/PavishK/Cartly.git
 ````
 
 2. Navigate to the frontend folder:
