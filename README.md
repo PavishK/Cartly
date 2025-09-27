@@ -6,33 +6,31 @@ Cartly is a mobile application that lets users manage a to-do list of products, 
 
 ## Features
 
-- **Create and manage product lists:** Add, edit, and remove products from your list.
-- **Price prediction:** Predict product prices using GRMini AI model.
-- **Total cost calculation:** Automatically calculate the total cost of your product list.
+- **Create and manage product lists:** Add, edit, and remove products from your list.  
+- **Price prediction:** Predict product prices using GRMini AI model.  
+- **Total cost calculation:** Automatically calculate the total cost of your product list.  
 - **Intuitive UI:** Smooth and responsive design with React Native and NativeWind.
 
 ---
 
 ## Folder Structure
 
-- `cartly-app` – Frontend (React Native + Expo + NativeWind)
-- `cartly-server` – Backend (Node.js + Express + MongoDB)
+- `cartly-app` – Frontend (React Native + Expo + NativeWind)  
+- `cartly-server` – Backend (Node.js + Express + MongoDB)  
 
 ---
 
 ## Tech Stack
 
 ### Frontend (`cartly-app`)
-
-- **React Native** – Cross-platform mobile development
-- **Expo** – Simplified workflow for React Native apps
-- **NativeWind** – Tailwind CSS for styling React Native components
+- **React Native** – Cross-platform mobile development  
+- **Expo** – Simplified workflow for React Native apps  
+- **NativeWind** – Tailwind CSS for styling React Native components  
 
 ### Backend (`cartly-server`)
-
-- **Node.js** – Server-side runtime
-- **Express.js** – Backend framework for APIs
-- **MongoDB** – NoSQL database for storing product lists and user data
+- **Node.js** – Server-side runtime  
+- **Express.js** – Backend framework for APIs  
+- **MongoDB** – NoSQL database for storing product lists and user data  
 
 ---
 
@@ -42,7 +40,7 @@ Cartly is a mobile application that lets users manage a to-do list of products, 
 
 1. Clone the repository:  
    ```bash
-   git clone <your-repo-url>
+   git clone https://github.com/PavishK/Cartly.git
 ````
 
 2. Navigate to the frontend folder:
@@ -55,7 +53,7 @@ Cartly is a mobile application that lets users manage a to-do list of products, 
    ```bash
    npm install
    ```
-4. Create a `.env` file with your MongoDB URI and port:
+4. Create a `.env` file with the server URL:
 
    ```env
    EXPO_PUBLIC_SERVER_URL="http://localhost:8080"
@@ -78,13 +76,13 @@ Cartly is a mobile application that lets users manage a to-do list of products, 
    ```bash
    npm install
    ```
-3. Create a `.env` file with your MongoDB URI and port:
+3. Create a `.env` file with your credentials:
 
    ```env
-   MONGODB_URI=""
+   MONGODB_URI="your-mongodb-uri"
    PORT=8080
-   AUTH_SECRET=""
-   GEMINI_API_KEY=""
+   AUTH_SECRET="your-auth-secret"
+   GEMINI_API_KEY="your-gemini-api-key"
    ```
 4. Start the server:
 
@@ -104,12 +102,25 @@ Cartly is a mobile application that lets users manage a to-do list of products, 
 
 ---
 
+## Screenshots
+## Screenshots
+
+![Home Screen](https://github.com/user-attachments/assets/fd8fbe9f-8c7b-4116-9738-afe82daa9ba1)
+
+![Add Product Screen](https://github.com/user-attachments/assets/4d33c499-f54f-4fef-9c30-860343acb939)
+
+![Total Cost Screen](https://github.com/user-attachments/assets/32a73734-23a5-4696-872d-818614af86b4)
+
+---
+
 ## License
 
-This project is licensed under the MY License.
+This project is licensed under the **MY License**.
 
 ---
 
 ## Contact
 
 **Portfolio:** [pavishk.dev](https://pavishk.dev)
+
+```
