@@ -103,6 +103,9 @@ Cartly is a mobile application that lets users manage a to-do list of products, 
 ---
 
 ## Screenshots
+![1000061119 (1)](https://github.com/user-attachments/assets/fd8fbe9f-8c7b-4116-9738-afe82daa9ba1)
+![1000061121](https://github.com/user-attachments/assets/4d33c499-f54f-4fef-9c30-860343acb939)
+![1000061120](https://github.com/user-attachments/assets/32a73734-23a5-4696-872d-818614af86b4)
 
 ---
 
@@ -116,6 +119,4 @@ This project is licensed under the **MY License**.
 
 **Portfolio:** [pavishk.dev](https://pavishk.dev)
 
-```
-Do you want me to do that?
 ```
