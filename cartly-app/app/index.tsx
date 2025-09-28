@@ -21,8 +21,8 @@ export default function Index() {
     try {
       setServerStatus(true);
       await apiClient.get('/');
+      router.push("/(auth)/login");
       makeToast("Server connection is live!");
-      router.push("/(auth)/login")
     } catch (error) {
       makeToast("Could not connect to server. Please try again later.")
     } finally {
@@ -32,6 +32,7 @@ export default function Index() {
 
   useEffect(() => {
     (async () => {
+      await apiClient.get('/');
       const token = await getToken();
       if (token && !user) {
         await handleProfile();

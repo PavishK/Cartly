@@ -79,7 +79,7 @@ export default function Login() {
           <View className='self-center mt-10 flex flex-row items-center justify-center gap-x-1'>
             <Text className='text-lg text-secondary'>Don&apos;t have an account?</Text>
               <Pressable onPress={()=>router.push("/(auth)/register")}>
-                <Text className='text-primary border-b border-primary'>signup</Text></Pressable>
+                <Text className='text-primary border-b border-primary'>Sign Up</Text></Pressable>
           </View>
 
         </View>

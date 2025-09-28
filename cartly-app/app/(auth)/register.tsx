@@ -107,7 +107,7 @@ const Register = () => {
           <View className='self-center mt-10 flex items-center justify-center flex-row gap-x-1'>
             <Text className='text-lg text-secondary'>Already have an account?</Text>
               <Pressable onPress={()=>router.push("/(auth)/login")}>
-                <Text className='text-primary border-b border-primary'>signin</Text></Pressable>
+                <Text className='text-primary border-b border-primary'>Sign In</Text></Pressable>
           </View>
 
         </View>

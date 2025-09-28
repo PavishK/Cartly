@@ -1,4 +1,4 @@
-import { View, Text, ToastAndroid, Platform, Pressable } from 'react-native'
+import { View, Text, ToastAndroid, Platform, Pressable, Linking } from 'react-native'
 import React, { useEffect, useState } from 'react'
 import NavBar from '@/components/NavBar';
 import { profileHandler } from '@/services/authApi';
@@ -23,7 +23,11 @@ const Profile = () => {
     { key:"Email", value: profileData.email},
     { key:"Created at", value: new Date(profileData.createdAt).toDateString()},
     { key:"Platform", value: Platform.OS},
-  ]
+  ];
+
+  const openPortfolio = () => {
+    Linking.openURL("https://pavishk.dev");
+  }
 
   const getProfileData = async() => {
 
@@ -82,8 +86,11 @@ const Profile = () => {
               {v.value}
             </Text>
           </View>
-
         ))}
+
+        <Pressable onPress={openPortfolio} className='mt-2'>
+          <Text className='text-secondary'>Made with {"</>"} by <Text className='text-primary underline font-medium'>PC</Text></Text>
+        </Pressable>
         
         <Pressable onPress={signOutHandler} className='absolute bottom-6 flex-row gap-x-1 border-2 border-red-500 bg-red-50 w-full p-4 rounded-xl items-center justify-center'>
             <MaterialCommunityIcons name="logout" size={24} color="red" />
