@@ -3,29 +3,38 @@ import cors from 'cors';
 import mongoose from "mongoose";
 import dotenv from 'dotenv';
 
-dotenv.config({quiet:true});
+import userRouter from './router/userRouter.js';
+import cartRouter from './router/cartRouter.js';
+
+dotenv.config({ quiet: true });
 
 const app = express();
 app.use(cors());
 app.use(express.json());
 
-
-app.get("/",(req,res)=>{
+// Routes
+app.get("/", (req, res) => {
     res.status(200).send("OK");
 });
+app.use('/api/user', userRouter);
+app.use('/api/cart', cartRouter);
 
-const port=process.env.PORT ?? 8080
+// MongoDB connection handler for serverless
+let isConnected = false;
 
-mongoose.connect(process.env.MONGODB_URI)
-    .then(()=>{
+async function connectDB() {
+    if (isConnected) return;
+    try {
+        await mongoose.connect(process.env.MONGODB_URI);
+        isConnected = true;
         console.log("MongoDB connected successfully!");
-        app.listen(port,()=>console.log("Server running on port "+port));
-    })
-    .catch((err)=>
-    console.log("Error connecting to MongoDB!"));
+    } catch (err) {
+        console.log("Error connecting to MongoDB!", err);
+    }
+}
 
-import userRouter from './router/userRouter.js';
-app.use('/api/user',userRouter);
-
-import cartRouter from './router/cartRouter.js';
-app.use('/api/cart',cartRouter);
+// Export serverless function for Vercel
+export default async function handler(req, res) {
+    await connectDB();
+    return app(req, res);
+}
