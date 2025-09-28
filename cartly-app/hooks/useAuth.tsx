@@ -23,19 +23,9 @@ export const useAuth = () => {
         makeToast("✅ " + res.message);
         setUser(res.user);
         router.replace({pathname:"/(tabs)/dashboard", params:res.user});
-
     } catch (error: any) {
-        let errMsg = "Something went wrong";
-
-        if (error.response?.data?.message) {
-        errMsg = error.response.data.message;
-        } else if (error.message) {
-        errMsg = error.message;
-        }
-
-        makeToast("❗" + errMsg);
-        setUser(null);
-
+        console.log(error);
+        makeToast("❗ "+error.response.data.message);
     } finally {
         setLoading(false);
     }

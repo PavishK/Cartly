@@ -11,7 +11,7 @@ app.use(express.json());
 
 
 app.get("/",(req,res)=>{
-    res.send("<h1>Server is running...</h1>");
+    res.status(200).send("OK");
 });
 
 const port=process.env.PORT ?? 8080

@@ -1,9 +1,14 @@
 {
   "cli": {
-    "version": ">= 16.19.2",
+    "version": ">=16.19.2",
     "appVersionSource": "remote"
   },
   "build": {
+    "apk": {
+      "android": {
+        "buildType": "apk"
+      }
+    },
     "development": {
       "developmentClient": true,
       "distribution": "internal"
@@ -12,9 +17,11 @@
       "distribution": "internal"
     },
     "production": {
+      "android": {
+        "buildType": "app-bundle"
+      },
       "autoIncrement": true,
       "env": {
-        "EXPO_PUBLIC_SERVER_URL": "https://cartly-server.onrender.com"
       }
     }
   },
