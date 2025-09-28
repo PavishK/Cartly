@@ -22,6 +22,7 @@
       },
       "autoIncrement": true,
       "env": {
+        "EXPO_PUBLIC_SERVER_URL":"@EXPO_PUBLIC_SERVER_URL"
       }
     }
   },

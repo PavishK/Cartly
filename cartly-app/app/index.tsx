@@ -1,4 +1,4 @@
-import { Image, Text, TouchableOpacity, View } from "react-native";
+import { Image, Text, ToastAndroid, TouchableOpacity, View } from "react-native";
 import { images } from '@/constants/images';
 import Feather from '@expo/vector-icons/Feather';
 import { useRouter } from "expo-router";
@@ -6,21 +6,32 @@ import { useEffect, useState } from "react";
 import { getToken } from "@/services/storage";
 import { useAuth } from "@/hooks/useAuth";
 import Loader from "@/components/Loader";
-import { connectToServer } from "@/services/authApi";
+import { apiClient } from "@/services/authApi";
+
+const makeToast = ( msg: string ) =>{
+  ToastAndroid.show(msg, ToastAndroid.LONG);
+}
 
 export default function Index() {
   const { user, loading, handleProfile } = useAuth();
   const router = useRouter();
+  const [ serverStatus, setServerStatus ] = useState(false);
 
-  const [serverReady, setServerReady] = useState(false);
+  const connectToserver = async() =>{
+    try {
+      setServerStatus(true);
+      await apiClient.get('/');
+      makeToast("Server connection is live!");
+      router.push("/(auth)/login")
+    } catch (error) {
+      makeToast("Could not connect to server. Please try again later.")
+    } finally {
+      setServerStatus(false);
+    }
+  }
 
   useEffect(() => {
-    // wake up Render server
     (async () => {
-      const isConnected = await connectToServer();
-      setServerReady(isConnected);
-
-      // also check auth if token exists
       const token = await getToken();
       if (token && !user) {
         await handleProfile();
@@ -28,7 +39,7 @@ export default function Index() {
     })();
   }, []);
 
-  if (loading || serverReady) return <Loader />;
+  if (loading || serverStatus) return <Loader />;
 
   return (
     <View className="flex-1 items-center bg-white flex-col gap-y-1.5 font-poppins">
@@ -50,7 +61,7 @@ export default function Index() {
         </Text>
 
         <TouchableOpacity
-          onPress={() => router.push("/(auth)/login")}
+          onPress={connectToserver}
           className="mt-3 flex items-center justify-center flex-row gap-x-2 min-w-96 h-16 bg-accent rounded-full"
         >
           <Text className="text-center text-secondary text-lg">Get Started</Text>

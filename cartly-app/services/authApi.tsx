@@ -11,20 +11,6 @@ export const apiClient = axios.create({
     }
 });
 
-export const connectToServer = async (retries = 3, delay = 1000): Promise<boolean> => {
-  for (let i = 0; i < retries; i++) {
-    try {
-      await axios.get("/");
-      return true;
-    } catch (error) {
-      if (i < retries - 1) {
-        await new Promise((res) => setTimeout(res, delay));
-      }
-    }
-  }
-  return false;
-};
-
 export const loginHandler = async(data:any)=>{
    const res = await apiClient.post("/api/user/login",data);
    const { message, token, user } = res.data;
