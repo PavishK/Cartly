@@ -1,126 +1,124 @@
-# Cartly
+# 🛒 Cartly
 
-Cartly is a mobile application that lets users manage a to-do list of products, predict their prices, and calculate the total cost using AI-powered predictions (GRMini). It simplifies shopping and budgeting with a smart, interactive experience.
-
----
-
-## Features
-
-- **Create and manage product lists:** Add, edit, and remove products from your list.  
-- **Price prediction:** Predict product prices using GRMini AI model.  
-- **Total cost calculation:** Automatically calculate the total cost of your product list.  
-- **Intuitive UI:** Smooth and responsive design with React Native and NativeWind.
+**Cartly** is a mobile application that helps users manage a to-do list of products, predict their prices, and calculate the total cost using **AI-powered predictions (GRMini)**. It simplifies shopping and budgeting with an intelligent, interactive experience.
 
 ---
 
-## Folder Structure
+## ✨ Features
 
-- `cartly-app` – Frontend (React Native + Expo + NativeWind)  
-- `cartly-server` – Backend (Node.js + Express + MongoDB)  
-
----
-
-## Tech Stack
-
-### Frontend (`cartly-app`)
-- **React Native** – Cross-platform mobile development  
-- **Expo** – Simplified workflow for React Native apps  
-- **NativeWind** – Tailwind CSS for styling React Native components  
-
-### Backend (`cartly-server`)
-- **Node.js** – Server-side runtime  
-- **Express.js** – Backend framework for APIs  
-- **MongoDB** – NoSQL database for storing product lists and user data  
+* 🧾 **Smart product list:** Add, edit, and remove products easily.
+* 🤖 **AI-powered price prediction:** Estimate prices using the **GRMini** model.
+* 💰 **Automatic total cost calculation:** Get instant total cost updates.
+* 📱 **Beautiful UI:** Built with **React Native** and **NativeWind** for a smooth, responsive experience.
 
 ---
 
-## Installation
+## 📦 Download
+
+📲 **[Download Cartly APK (v1.0 – 130 MB)](https://expo.dev/artifacts/eas/3n6zGdQkctxvMPXCc42d6F.apk)**
+
+> Click the link above to install the latest version of the Cartly app on your Android device.
+
+---
+
+## 📂 Folder Structure
+
+```
+Cartly/
+├── cartly-app/      # Frontend (React Native + Expo + NativeWind)
+└── cartly-server/   # Backend (Node.js + Express + MongoDB)
+```
+
+---
+
+## 🧠 Tech Stack
 
 ### Frontend (`cartly-app`)
 
-1. Clone the repository:  
-   ```bash
-   git clone https://github.com/PavishK/Cartly.git
-````
-
-2. Navigate to the frontend folder:
-
-   ```bash
-   cd cartly-app
-   ```
-3. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-4. Create a `.env` file with the server URL:
-
-   ```env
-   EXPO_PUBLIC_SERVER_URL="http://localhost:8080"
-   ```
-5. Start the app:
-
-   ```bash
-   npx expo start
-   ```
+* ⚛️ **React Native** – Cross-platform mobile development
+* 🚀 **Expo** – Streamlined React Native workflow
+* 🎨 **NativeWind** – Tailwind CSS for React Native components
 
 ### Backend (`cartly-server`)
 
-1. Navigate to the backend folder:
-
-   ```bash
-   cd cartly-server
-   ```
-2. Install dependencies:
-
-   ```bash
-   npm install
-   ```
-3. Create a `.env` file with your credentials:
-
-   ```env
-   MONGODB_URI="your-mongodb-uri"
-   PORT=8080
-   AUTH_SECRET="your-auth-secret"
-   GEMINI_API_KEY="your-gemini-api-key"
-   ```
-4. Start the server:
-
-   ```bash
-   npm start
-   ```
+* 🟩 **Node.js** – Server-side JavaScript runtime
+* 🧩 **Express.js** – API framework for Node.js
+* 🍃 **MongoDB** – NoSQL database for products and user data
 
 ---
 
-## Usage
+## ⚙️ Installation
 
-1. Open the Cartly app on your device/emulator.
-2. Add products to your to-do list.
-3. Predict prices using GRMini AI feature.
-4. View the total cost of your products list.
-5. Edit or remove products as needed.
+### Frontend (`cartly-app`)
+
+```bash
+git clone https://github.com/PavishK/Cartly.git
+cd cartly-app
+npm install
+```
+
+Create a `.env` file:
+
+```env
+EXPO_PUBLIC_SERVER_URL="http://localhost:8080"
+```
+
+Run the app:
+
+```bash
+npx expo start
+```
 
 ---
 
-## Screenshots
-## Screenshots
+### Backend (`cartly-server`)
 
-![Home Screen](https://github.com/user-attachments/assets/fd8fbe9f-8c7b-4116-9738-afe82daa9ba1)
+```bash
+cd cartly-server
+npm install
+```
 
-![Add Product Screen](https://github.com/user-attachments/assets/4d33c499-f54f-4fef-9c30-860343acb939)
+Create a `.env` file:
 
-![Total Cost Screen](https://github.com/user-attachments/assets/32a73734-23a5-4696-872d-818614af86b4)
+```env
+MONGODB_URI="your-mongodb-uri"
+PORT=8080
+AUTH_SECRET="your-auth-secret"
+GEMINI_API_KEY="your-gemini-api-key"
+```
+
+Start the server:
+
+```bash
+npm start
+```
 
 ---
 
-## License
+## 🚀 Usage
+
+1. Launch the Cartly app on your Android device.
+2. Add products to your shopping list.
+3. Use the **GRMini AI** feature to predict prices.
+4. Instantly view the **total estimated cost**.
+5. Edit or remove products anytime.
+
+---
+
+## 🖼️ Screenshots
+
+| Home Screen                                                                                     | Add Product                                                                                            | Total Cost                                                                                            |
+| ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
+| ![Home Screen](https://github.com/user-attachments/assets/fd8fbe9f-8c7b-4116-9738-afe82daa9ba1) | ![Add Product Screen](https://github.com/user-attachments/assets/4d33c499-f54f-4fef-9c30-860343acb939) | ![Total Cost Screen](https://github.com/user-attachments/assets/32a73734-23a5-4696-872d-818614af86b4) |
+
+---
+
+## 📜 License
 
 This project is licensed under the **MY License**.
 
 ---
 
-## Contact
+## 💬 Contact
 
-**Portfolio:** [pavishk.dev](https://pavishk.dev)
-
-```
+📧 **Portfolio:** [pavishk.dev](https://pavishk.dev)
