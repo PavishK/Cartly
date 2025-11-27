@@ -1,6 +1,4 @@
----
-
-# 🛒 Cartly
+🛒 Cartly
 
 **Cartly** is a mobile application that helps users manage a smart product list, predict prices, and calculate the total cost using **AI-powered predictions (GRMini)**. It makes shopping and budgeting simple with an intelligent and interactive experience.
 
