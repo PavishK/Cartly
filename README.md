@@ -109,7 +109,8 @@ npm start
 
 | Home Screen                                                                                     | Add Product                                                                                            | Total Cost                                                                                            |
 | ----------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------- |
-| ![Home Screen](https://github.com/user-attachments/assets/fd8fbe9f-8c7b-4116-9738-afe82daa9ba1) | ![Add Product Screen](https://github.com/user-attachments/assets/4d33c499-f54f-4fef-9c30-860343acb939) | ![Total Cost Screen](https://github.com/user-attachments/assets/32a73734-23a5-4696-872d-818614af86b4) |
+| ![Home Screen](https://github.com/user-attachments/assets/fd8fbe9f-8c7b-4116-9738-afe82daa9ba1) | ![Add Product Screen](https://github.com/user-attachments/assets/4d33c499-f54f-4fef-9c30-860343acb939) | ![Total Cost Screen](https://github.com/user-attachments/assets/32a73734-23a5-4696-872d-818614af86b4) | [ IOS Screen ](https://github.com/user-attachments/assets/2f3f4b4f-8ea3-4385-bbc2-5bb1dd05aba0) |
+
 
 ---
 
