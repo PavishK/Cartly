@@ -89,7 +89,7 @@ Cartly/
 - 🟩 Node.js  
 - 🧩 Express.js  
 - 🍃 MongoDB  
-- 🤖 Gemini / GRMini AI  
+- 🤖 Gemini AI  
 
 ---
 
@@ -180,7 +180,6 @@ Licensed under **MY License**.
 **Pavish K**
 
 🌐 Portfolio: [https://pavishk.dev](https://pavishk.dev)
-📧 Contact via portfolio
 
 ---
 
